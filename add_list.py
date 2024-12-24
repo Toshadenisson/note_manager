@@ -1,17 +1,5 @@
-username=input('Введите Ваше Имя ')
-title=input('Введите заголовок заметки: ')
-content=input('Введите описание заметки: ')
-status=input('Введите статус заметки: ')
-created_date=input('Введите дату создания (дд.мм.гг.) ')
-issue_date=input('Введите дату окончания (дд.мм.гг.) ')
-x=input('Введите заголовок 1 ')
-y=input('Введите заголовок 2 ')
-z=input('Введите заголовок 3 ')
-title_list=[title,x,y,z]
-print("Ваше имя - ", username)
-print("Заголовок заметки - ", title)
-print("Описание заметки - ", content)
-print("Статус заметки - ", status)
-print("Дата начала - ", created_date[0:5])
-print ("Дата окончания - ", issue_date[0:5])
-print("Заголовки: ",title_list)
+title_list=[]
+for i in range(3):
+    x = input('Введите заголовок ')
+    title_list.append(x)
+print ( 'Список заголовков:', title_list)
